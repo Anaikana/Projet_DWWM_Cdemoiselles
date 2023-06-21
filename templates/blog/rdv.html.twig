@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cdemoiselles{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 'playfair display'; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>{{ controller_name }}</h1>
+
+    <main>
+<div class="container-md">
+    <h2> C’est décidé, je me choisis ! </h2> 
+    <br>
+    <section>
+        <form id="Resa" action="/action_page.php">
+        <label for="lname">NOM:</label>
+        <input type="text" id="lname" name="lname" value="DUPONT">
+        <br>
+        <br>
+        <label for="fname">Prénom:</label>
+        <input type="text" id="fname" name="fname" value="Marie"> 
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" value="email@email.fr">
+        <br>
+        <br>
+        <p>À vous de jouer ! <br>
+        Choississez la prestation souhaitée et votre date, c’est aussi simple que ça &#10024</p>
+        <br>
+        <br>
+        <label for="Choixpresta">Choix prestation:</label>
+
+        <select name="Choix prestation" id="Prestations select">
+                <option value="">--Choississez une option--</option>
+              
+                <option value="shopping">Accompagnement shopping</option>
+                <option value="diagnosticmorpho">Accompagnement shopping en groupe</option>
+                <option value="diagnosticmorpho">Accompagnement shopping - Spécial Mariage</option>
+                <option value="diagnosticmorpho">Atelier colorimétrie</option>
+                <option value="diagnosticmorpho">Atelier colorimétrie - EVJF</option>
+                <option value="diagnosticmorpho">Cfit</option>
+                <option value="diagnosticmorpho">Coaching sportif</option>
+                <option value="diagnosticmorpho">Coaching sportif - Post rééducation</option>
+                <option value="diagnosticcolo">Diagnostic colorimétrie</option>
+                <option value="diagnosticmorpho">Diagnostic morphologie</option>
+                <option value="diagnosticstyle">Diagnostic style</option>
+                <option value="fashiondetox">Fashion détox</option>
+                <option value="cocooning">Forfait cocooning</option>
+                <option value="silhouette">Forfait silhouette</option>
+            </select>
+          <input type="submit" value="Envoyer">
+        </form> 
+        
+       <!--- <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p> -->
+    </section>
+</div>
+<br>
+</main>
+    <!--<ul>
+        <li>Your controller at <code><a href="{{ 'C:/laragon/www/Symfony/symfony/blog/src/Controller/BlogController.php'|file_link(0) }}">src/Controller/BlogController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/laragon/www/Symfony/symfony/blog/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
+    </ul>-->
+</div>
+{% endblock %}

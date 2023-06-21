@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Hello BlogController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 'playfair display'; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Bonjour {{ controller_name }}! ✅</h1>
+
+   <!--Partie principale du site-->
+<style>
+.portrait {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+</style>
+<main>
+  <div class="container p-3 my-3 border" id="descriptif">
+  <p>Je suis Marie-Anne GIRARDET, professeur d'activité physique adaptée & conseillère en image certifiée à Lyon. 
+  <br>
+  Depuis toujours j'ai ce plaisir d'écouter, de conseiller, et de soutenir des femmes en quête de renouveau.
+  <br>
+  Je suis convaincue que l'activité physique & la mode ont des points communs : tous les deux cultivent notre estime de soi & favorisent une bonne santé physique et mentale.
+  <br>
+  C'est pourquoi, j'ai souhaité créer le concept innovant <i>Cdemoiselles</i>, alliant mes deux passions. <br>
+  Je peux ainsi aider les femmes à s'aimer, se dépasser et s'accepter comme elles sont, en améliorant le regard et l'image qu'elles ont d'elles-mêmes.
+  <br>
+  Par le biais des techniques de coaching en image & un accompagnement sportif personnalisé, je vous emmène vers une meilleure et plus juste version de vous-même. 
+  </p>
+  <br>
+  <div class="container" id="portrait">
+  <img src="Images/MA/Portrait 4.jpg" width="650" height="675" alt="Portrait">
+</div>
+<br>
+  <p>  <a href="prestations.php" class="btn btn-light">Plus d'informations</a>
+</div>
+  </main>
+  <br>
+  <br>
+    <ul>
+        <li>Your controller at <code><a href="{{ 'C:/laragon/www/Symfony/symfony/blog/src/Controller/BlogController.php'|file_link(0) }}">src/Controller/BlogController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/laragon/www/Symfony/symfony/blog/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
+    </ul>
+</div>
+{% endblock %}

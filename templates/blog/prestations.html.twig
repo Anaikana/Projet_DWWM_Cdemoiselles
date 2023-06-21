@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cdemoiselles{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 'playfair display'; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>{{ controller_name }}</h1>
+
+ <head>
+  <style>
+    .container {
+      display: flex;
+         }
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+    .row {
+      margin: 10px;
+      padding: 10px;
+      background-color: #CC978E;
+      
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="column">
+      <div class="row">
+        <h2>Accompagnement shopping</h2>
+        <p>L'accompagnement shopping (3h) met en pratique les principes du conseil en image et vous révèle toutes ses astuces afin de vous rendre autonome par la suite. <br> 
+Il vous évite des achats inutiles en choisissant des vêtements et accessoires qui vous conviennent parfaitement, à tout point de vue.
+Dites non aux achats superflus ! <br>
+Il peut être réalisé à la suite des diagnostics (colorimétrie, morphologie ou style vestimentaire) ou en prestation unique.</p>
+<img src="Images/Prestas/Accompagnementshopping.jpg" alt="Accompagnement shopping">
+      </div>
+      <div class="row">
+        <h2>Diagnostic colorimétrie</h2>
+        <p>Nous étudierons ensemble quelles sont les couleurs qui correspondent à vos coloris naturels et qui vous mettent naturellement en valeur. <br>
+    L'effet des couleurs que vous portez à proximité du visage est considérable et peut illuminer le teint ou, au contraire, creuser les cernes ou accentuer les marques de fatigue...</p>
+    <img src="Images/Prestas/Colorimétrie.jpg" alt="Diagnostic colorimétrie">
+  </div>
+      <div class="row">
+        <h2>Diagnostic morphologie</h2>
+        <p>L’analyse de votre morphologie permet de mettre en valeur vos atouts, corriger vos zones sensibles (c’est-à-dire les parties de votre corps que vous n’aimez pas ou avec lesquelles vous n’êtes pas à l’aise). <br> 
+    Ma mission est de vous apporter des conseils pour harmoniser votre silhouette en fonction de vos objectifs en termes d’image.</p>
+    <img src="Images/Prestas/Diagnosticmorpho.jpg" alt="Diagnostic morphologie">
+  </div>
+      <div class="row">
+        <h2>Diagnostic style</h2>
+        <p>Création de votre style vestimentaire de demain : <br>
+    Affirmez-vous par un style vestimentaire qui vous est propre, qui correspond à votre personnalité et pensez au message que vous souhaitez véhiculer !</p>
+    <img src="Images/Prestas/Diagnosticstyle.jpg" alt="Diagnostic style">
+  </div>
+      <div class="row">
+        <h2>Fashion détox</h2>
+        <p>Réorganisation de la garde robe/tri du dressing conseils et confection de tenues (3h)</p>
+        <img src="Images/Prestas/Fashiondetox.jpg" alt="Fashion détox">
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="row">
+        <h2>Forfait cocooning</h2>
+        <p>“Séréni’Thé”
+        <br>
+        Fashion détox (tri complet du dressing) <br>
+        Confection de tenues adaptées, selon vos vêtements <br>
+        Conseils & bilan autour “d’un p’ti thé” <br>  
+      <br>  
+        Forfait pour une demie-jounée</p></p>
+        <img src="Images/Prestas/Forfaitcocooning.jpg" alt="Forfait cocooning">
+      </div>
+      <div class="row">
+        <h2>Forfait look complet</h2>
+        <p>“Révèle toi”
+      <br>
+      Colorimétrie <br>
+      Diagnostic morphologique <br>
+      Conseil & relooking coiffure <br>
+      Accompagnement shopping (sans obligation d’achats)
+      <br>
+      Pause déj’ incluse dans le tarif</p>
+      <img src="Images/Prestas/Forfaitlookcomplet.jpg" alt="Forfait look complet">
+      </div>
+      <div class="row">
+        <h2>Forfait silhouette</h2>
+        <p>“Sublime-Toi” <br>
+        <br>
+        Colorimétrie <br>
+        Diagnostic morphologique <br>
+        Diagnostic style vestimentaire <br>
+        Accompagnement shopping (sans obligation d’achat) <br>
+        <br>
+        La pause déj’ sera incluse dans le tarif</p>
+      <img src="Images/Prestas/Forfaitsilhouette.jpg" alt="Forfait silhouette">
+      </div>
+<br>
+<br>
+<p> Envie de vous réconcilier avec l'effort physique ? Les prestations sportives, c'est <a href="sport.php">ici</a> !</p>
+</div>
+<br>
+<br>
+</main>
+</body>
+    <!--<ul>
+        <li>Your controller at <code><a href="{{ 'C:/laragon/www/Symfony/symfony/blog/src/Controller/BlogController.php'|file_link(0) }}">src/Controller/BlogController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/laragon/www/Symfony/symfony/blog/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
+    </ul>-->
+</div>
+{% endblock %}

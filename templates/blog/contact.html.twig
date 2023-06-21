@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cdemoiselles{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 'playfair display'; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+<main> 
+<div class="example-wrapper">
+
+    <h3>Une question ? N'hésitez pas à me contacter ! &#128140</h3>
+
+{{form(contactform)}}
+ 
+    
+            <br>
+            <br>
+            <div class="submit">
+                <div class="submit__acceptrgpd">
+                    <input type="checkbox" name="rgpd" id="rgpd">
+                    <label for="rgpd"><i>En cochant cette case, vou acceptez que vos données personnelles soient traitées par notre équipe commerciale. Vous acceptez également nos <a href="conditionsGeneralesUtilisation">Conditions Générales d'Utilisation.</a></i></label>
+                </div>
+            </p>
+                <br>
+                <br>
+                <div class="submit__btn">
+                    <input type="submit" value="Envoyer le formulaire">
+                </div>
+            </div>
+        </form>
+  
+    <br>
+    <br>
+    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+      <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+          var setting = {"height":531,"width":803,"zoom":17,"queryString":"Rue des Chanets, Dannemarie-sur-Crête, France","place_id":"Ei5SdWUgZGVzIENoYW5ldHMsIERhbm5lbWFyaWUtc3VyLUNyw6p0ZSwgRnJhbmNlIi4qLAoUChIJZ_mjuUNnjUcRIJzyGEO614ESFAoSCVfPpj9AZ41HET4Afsf4d0VY","satellite":false,"centerCoord":[47.20478191715202,5.869388799999995],"cid":"0x81d7ba4318f29c20","lang":"fr","cityUrl":"/france/besancon-9363","cityAnchorText":"Carte de Besançon, Franche-Comte, France","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"922127"};
+          var d = document;
+          var s = d.createElement('script');
+          s.src = 'https://1map.com/js/script-for-user.js?embed_id=922127';
+          s.async = true;
+          s.onload = function (e) {
+            window.OneMap.initMap(setting)
+          };
+          var to = d.getElementsByTagName('script')[0];
+          to.parentNode.insertBefore(s, to);
+        })();</script><a href="https://1map.com/fr/map-embed">1 Map</a></div>
+    <br>
+    <br>
+  </div>
+    </main>
+   <!-- <ul>
+        <li>Your controller at <code><a href="{{ 'C:/laragon/www/Symfony/symfony/blog/src/Controller/BlogController.php'|file_link(0) }}">src/Controller/BlogController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/laragon/www/Symfony/symfony/blog/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
+    </ul>
+</div>-->
+{% endblock %}

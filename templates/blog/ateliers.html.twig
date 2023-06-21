@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cdemoiselles{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 'playfair display'; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>{{ controller_name }}</h1>
+
+    <main>
+<div class="container text-center">
+  <div class="row row-cols-3">
+    <div class="col"> 
+        <div class="card mb-2" style="width: 18rem;">
+          <img src="Images/Ateliers/colo.jpg" class="card-img-top" alt="Atelier colorimétrie">
+          <div class="card-body">
+            <h5 class="card-title">Atelier colorimétrie</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi, nesciunt provident quisquam nihil natus beatae dignissimos necessitatibus vero!</p><a href="priseRDV.php" class="btn btn-light">Je veux !</a>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="col"> 
+        <div class="card mb-2" style="width: 18rem;">
+        <img src="Images/Ateliers/coloEVJF.jpg" class="card-img-top" alt="Atelier colorimétrie EVJF">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Atelier colorimétrie - Spécial EVJF</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi, nesciunt provident quisquam nihil natus beatae dignissimos necessitatibus vero!</p><a href="priseRDV.php" class="btn btn-light">Je veux !</a>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="col"> 
+        <div class="card mb-2" style="width: 18rem;">
+        <img src="Images/Ateliers/shoppinggroupe.jpg" class="card-img-top" alt="Atelier shopping et diagnostic morpho">
+              <div class="card-body">
+                <h5 class="card-title">Accompagnement shopping (groupe) et diagnostic morphologie</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi, nesciunt provident quisquam nihil natus beatae dignissimos necessitatibus vero!</p><a href="priseRDV.php" class="btn btn-light">Je veux !</a>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="col"> 
+        <div class="card mb-2" style="width: 18rem;">
+        <img src="Images/Ateliers/shoppingmariage.jpg" class="card-img-top" alt="Atelier shopping mariage">
+                  <div class="card-body">
+                    <h5 class="card-title">Accompagnement shopping - Spécial mariée et demoiselle d'honneur</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur excepturi, nesciunt provident quisquam nihil natus beatae dignissimos necessitatibus vero!</p><a href="priseRDV.php" class="btn btn-light">Je veux !</a>
+          </div>
+        </div>
+    </div>
+    <br>
+  </div>
+</div>
+</main>
+    <!--<ul>
+        <li>Your controller at <code><a href="{{ 'C:/laragon/www/Symfony/symfony/blog/src/Controller/BlogController.php'|file_link(0) }}">src/Controller/BlogController.php</a></code></li>
+        <li>Your template at <code><a href="{{ 'C:/laragon/www/Symfony/symfony/blog/templates/blog/index.html.twig'|file_link(0) }}">templates/blog/index.html.twig</a></code></li>
+    </ul>-->
+</div>
+{% endblock %}
